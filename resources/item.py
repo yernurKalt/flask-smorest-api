@@ -5,7 +5,7 @@ from flask.views import MethodView
 from sqlalchemy.exc import SQLAlchemyError
 
 from db import db
-from models import ItemModel
+from models import ItemModel, StoreModel
 from schemas import ItemSchema, ItemUpdateSchema
 
 blp = Blueprint("items", __name__, description="Operations on items")
